@@ -145,8 +145,9 @@ header img {
   transform: scale(0.5) translateY(-15px);
 }
 .menu {
-  background-image: url("resources/blane.jpeg");
-  background-color: #c3adc7fb; /* Used if the image is unavailable */
+  background-image:
+  linear-gradient(rgba(60, 4, 163, 0.85),rgba(60, 4, 163, 0.85),rgba(102, 4, 163, 0.75), rgba(166, 37, 248, 0.55), rgba(0, 0, 0, 0.6)), 
+  url("resources/blane.jpeg");
   height: 100px; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -162,17 +163,36 @@ header img {
 }
 .menu ul {
   position: relative;
+  background-color: #111;
+  padding: 10px 20px;
+  border: solid rgba(255, 255, 255, 0.753);
 }
 .menu ul li {
   list-style: none;
 }
 .menu ul li a {
   text-decoration: none;
-  font-size: 24px;
-  color: #111;
+  font-size: 32px;
+  color: #fff;
+  font-family: "Monoton";
+  
 }
-.menu ul li a:hover {
-  color: #03a9f4;
+
+#home:hover {
+  color: #B3FF00;
+  
+}
+#about:hover {
+  color: #00FFE6;
+  
+}
+#events:hover {
+  color: #FF00BF;
+  
+}
+#contact:hover {
+  color: #FFB300
+  
 }
 
 @media (max-width: 991px) {
